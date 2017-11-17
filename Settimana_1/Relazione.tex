@@ -147,41 +147,59 @@ La piattaforma è relativamente piccola, con circa 100 milioni di utenti, e non 
 \bigskip
 \section*{Skype Messenger}
 \subsection*{Descrizione}
+Chatbot Skype sono implementati attraverso l'utilizzo di Microsoft Bot Framework; esso fornisce strumenti e servizi per creare, distribuire e pubblicare bot, inclusi il servizio Bot di Azure, l'SDK del builder di Bot, Bot Framework Portal e il Bot Connector. \\
+Il servizio Bot di Azure fornisce un ambiente integrato appositamente creato per lo sviluppo di bot. È possibile scrivere un bot, connettersi, testare, distribuire e gestirlo dal browser Web senza necessità di un editor separato o del controllo del codice sorgente; esso accelera il processo di sviluppo di un bot, offrendo cinque modelli di bot tra cui scegliere.  \\
+Il Bot Framework include Bot Builder SDK, il quale permette di creare bot con C\# (Bot Builder SDK per .NET) o Javascript ( Bot Builder SDK per Nodejs). L'SDK contiene dialoghi integrati per gestire le interazioni dell'utente che vanno da un Sì / No di base a una disambiguazione complessa. I riconoscitori e i gestori di eventi integrati aiutano a guidare l'utente attraverso una conversazione. \\
+Il Bot Framework Portal offre un posto comodo per registrare, connettere e gestire il bot. Fornisce inoltre strumenti diagnostici e un controllo della chat Web che è possibile utilizzare per incorporare il bot in una pagina Web. \\
+Bot Framework supporta diversi canali popolari per la connessione di bot e persone. Gli utenti possono avviare conversazioni con il bot su qualsiasi canale con cui è stato configurato, inclusi email, Facebook, Skype, Slack e SMS. 
 
 \subsection*{Vantaggi}
 \begin{itemize}
-		\item 
-		\item  
-		\item 
+		\item Disponibilità di SDK ufficiali in diversi linguaggi;
+		\item Fornisce un'applicazione desktop per il test e debug del bot;  
+		\item Integra API Microsoft per aggiungere potenti funzionalità e algoritmi di intelligenza artificiale. Tra queste, è molto interessante LUIS  (Language Understanding Intelligent Service), in grado di elaborare il linguaggio naturale utilizzando modelli linguistici predefiniti o personalizzati, oltre la capacità di rilevare sentimenti, frasi chiave, argomenti e lingua dal testo.
+		\item Supporta diversi canali popolari e fornisce semplici connettori a tali canali. Questo permette agli utenti di avviare conversazioni con il bot su qualsiasi canale con cui è stato configurato, inclusi email, Facebook, Skype, Slack e SMS;
+		\item Fornisce uno strumento integrato per il salvataggio e la gestione dello stato di una conversazione user-bot, fondamentale per conversazioni complesse.
+		\item Fornisce uno strumento integrato per gestire il flusso della conversazione (Dialog);
+		\item Documentazione ampia e dettagliata.
 \end{itemize} 
 
 \subsection*{Svantaggi}
 \begin{itemize}
-		\item 
-		\item  
-		\item 
-\end{itemize} 
+		\item Configurazione manuale dei sistemi per la protezione e la sicurezza delle comunicazioni;
+		\item La possibilità di connettere il bot a diversi canali può rendere più lenta la velocità di risposta; 
 
-\bigskip
-\section*{WeChat}
-\subsection*{Descrizione}
-
-\subsection*{Vantaggi}
-\begin{itemize}
-		\item 
-		\item  
-		\item 
-\end{itemize} 
-
-\subsection*{Svantaggi}
-\begin{itemize}
-		\item 
-		\item  
-		\item 
 \end{itemize} 
 
 \bigskip
 \section*{Facebook Messenger}
+\subsection*{Descrizione}
+Piattaforma di messaggistica istantanea sviluppata da Facebook, con più di un miliardo di utenti attivi. \\
+Le caratteristiche principali sono la presenza di modelli personalizzabili che consentono di inviare contenuti più elaborati grazie ai messaggi strutturati. Questi modelli possono definire la gerarchia all'interno dei messaggi e creare interazioni complesse e dinamiche; essi incorporano alcuni elementi di interfaccia grafica (pulsanti, immagini, liste, ricevute, menù, ecc.). Inoltre prevede una visualizzazione web all'interno di una conversazione, la quale permette di visualizzare contenuti esterni basati su tecnologie web e con i quali si può interagire. \\
+Una caratteristica peculiare è la presenza di strumenti per l'analisi delle prestazioni e raccoglimento di dati sulle interazioni degli utenti con il bot. Inoltre fornisce un protocollo di consegna, il quale permette a diversi bot di collaborare per una stessa pagina facebook, senza interferenze reciproche.
+
+\subsection*{Vantaggi}
+\begin{itemize}
+		\item Integrazione di NLP (Natural Language Processing);
+		\item Ricco insieme di API dedicate all'interfaccia utente; 
+		\item Fornisce strumenti per la raccolta e analisi di diverse tipologie di dati (i.e. prestazioni, tipologie di interazioni e eventi, grado di utilizzo del bot, ecc.);
+		\item Fornisce uno strumento per la visualizzazione di pagine web e interazione con esse;
+		\item Fornisce menù persistenti nella conversazione, che permettono di visualizzare le possibili interazioni con il bot e guidano l'utente per passi;
+		\item Prevede diversi modelli di messaggio personalizzabili (con pulsanti, liste, modelli generici, Open Graph, ricevute, ecc.);
+		\item Documentazione ampia e dettagliata;
+		\item Presenza numerosa di API.
+\end{itemize} 
+
+\subsection*{Svantaggi}
+\begin{itemize}
+		\item Sono necessarie procedure manuali per configurare la protezione delle conversazioni;
+		\item Se il server non risponde ad una richiesta in pochi secondi, Facebook ritenta l'invio della richiesta al server; per elaborazioni che richiedono troppo tempo, il server riceve inutilmente la stessa richiesta più volte;
+		\item Una volta creato il bot, esso deve essere sottoposto all'approvazione di Facebook.
+		\item Esiste un limite per il numero di elementi e pulsanti che è possibile aggiungere ai modelli; c'è anche un limite per la lunghezza dei messaggi.
+\end{itemize} 
+
+\bigskip
+\section*{WeChat}
 \subsection*{Descrizione}
 
 \subsection*{Vantaggi}
