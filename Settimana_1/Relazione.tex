@@ -1,0 +1,203 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NIH Grant Proposal for the Specific Aims and Research Plan Sections
+% LaTeX Template
+% Version 1.0 (21/10/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Erick Tatro (erickttr@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% Adapted from:
+% J. Hrabe (http://www.magalien.com/public/nih_grants_in_latex.html)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,notitlepage]{article}
+
+% Variabili per non ripetere i contatti mille volte, MODIFICARE QUI
+\newcommand{\nomeStudente}{Giovanni Bruno}
+\newcommand{\cognomeStudente}{Sanna}
+\newcommand{\matricolaStudente}{1029744}
+\newcommand{\emailStudente}{giovannibruno.sanna@studenti.unipd.com}
+\newcommand{\telStudente}{+39 0000000000}
+
+\newcommand{\nomeTutorAziendale}{Nome}
+\newcommand{\cognomeTutorAziendale}{Cognome}
+\newcommand{\emailTutorAziendale}{xxtutor@azienda.it}
+\newcommand{\telTutorAziendale}{+39 0000000000}
+
+\newcommand{\ragioneSocAzienda}{Soluzioni Software S.R.L.}
+\newcommand{\indirizzoAzienda}{Via Via dei Ronchi, 21, 35127 Padova (PD)}
+\newcommand{\sitoAzienda}{http://www.soluzioni-sw.it/}
+
+
+
+% A note on fonts: As of 2013, NIH allows Georgia, Arial, Helvetica, and Palatino Linotype. LaTeX doesn't have Georgia or Arial built in; you can try to come up with your own solution if you wish to use those fonts. Here, Palatino & Helvetica are available, leave the font you want to use uncommented while commenting out the other one.
+%\usepackage{palatino} % Palatino font
+\usepackage[utf8x]{inputenc}%codifica
+\usepackage{helvet} % Helvetica font
+\usepackage{multirow}
+\renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
+\usepackage[T1]{fontenc}
+\linespread{1.2} % A little extra line spread is better for the Palatino font
+\usepackage{fancyhdr} %pacchetto per le intestazioni
+\usepackage{hyperref}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{graphicx} % Required for including images
+%\usepackage{booktabs} % Top and bottom rules for table
+%\usepackage{wrapfig} % Allows in-line images
+%\usepackage[labelfont=bf]{caption} % Make figure numbering in captions bold
+\usepackage[top=0.5in,bottom=0.5in,left=0.5in,right=0.5in]{geometry} % Reduce the size of the margin
+\pagestyle{empty}
+
+\hyphenation{ionto-pho-re-tic iso-tro-pic fortran} % Specifies custom hyphenation points for words or words that shouldn't be hyphenated at all
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue
+}
+
+%----------------------------------------------------------------------------------------
+%	Creato da Mich - Updated by Simone Pessotto 04/08/2015
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	
+\noindent
+\parbox{0.7\columnwidth}{Università degli Studi di Padova\\
+	Piano di lavoro stage presso \ragioneSocAzienda{}\\
+	\nomeStudente{} \cognomeStudente{} (\matricolaStudente{})}%matricola
+\parbox{0.3\columnwidth}{
+	\hfill \includegraphics[scale=0.08]{immagini/logo-unipd.png}}
+
+\bigskip
+\begin{center}
+{\Huge \textbf{Analisi delle piattaforme di messaggistica}} \\ \bigskip
+	{\Large \textit{presso \ragioneSocAzienda{}}}\\ \bigskip
+	{\Large \textit{\nomeStudente{} \cognomeStudente{}}}
+\end{center}
+
+%\section*{Contatti}
+%\textbf{Studente:} \nomeStudente{} \cognomeStudente{}, \href{mailto:\emailStudente{}}{\emailStudente{}}, \telStudente{} \\
+%\textbf{Tutor aziendale:} \nomeTutorAziendale{} \cognomeTutorAziendale{}, \href{mailto:\emailTutorAziendale{}}{\emailTutorAziendale{}}, \telTutorAziendale{} \\
+%\textbf{Azienda:} \ragioneSocAzienda{}, \indirizzoAzienda{}, \href{\sitoAzienda{}}{\sitoAzienda{}}
+
+\section*{Contenuto}
+Tale documento contiene una breve relazione sulle piattaforme di messaggistica analizzate:
+\begin{itemize}
+		\item Telegram Messenger; 
+		\item Skype Messenger; 
+		\item WeChat;
+		\item Facebook Messenger. 
+	\end{itemize} 
+	Per ogni piattaforma analizzata viene riportata una breve descrizione, vantaggi e svantaggi, in termini di caratteristiche e funzionalità supportate. \\
+	Inoltre viene individuata la piattaforma, tra quelle analizzate, scelta per lo sviluppo del bot.
+
+
+\newpage
+
+
+
+\noindent
+\parbox{0.7\columnwidth}{Università degli Studi di Padova\\
+	Piano di lavoro stage presso \ragioneSocAzienda{}\\
+	\nomeStudente{} \cognomeStudente{} (\matricolaStudente{})}%matricola
+\parbox{0.3\columnwidth}{
+	\hfill \includegraphics[scale=0.08]{immagini/logo-unipd.png}}
+
+\bigskip
+\section*{Telegram Messenger}
+\subsection*{Descrizione}
+Telegram è un servizio di messaggistica istantanea basato su cloud ed erogato senza fini di lucro. I client ufficiali di Telegram sono open-source per diverse piattaforme. Caratteristiche di Telegram sono la possibilità di stabilire conversazioni cifrate ent-to-end, effettuare chiamate vocali cifrate end-to-end, scambiare messaggi vocali, videomessaggi, fotografie, video, stickers e file di qualsiasi tipo grandi fino a 1,5 GB.  \\
+Oltre a inviare diversi tipi di file, Telegram è focalizzato sulla velocità. I messaggi si sincronizzano perfettamente in tutti i canali (e a tutti gli utenti) simultaneamente. \\
+L'accessibilità è una caratteristica chiave di Telegram. Il suo sistema basato su cloud consente di accedere ai messaggi da qualsiasi dispositivo e da qualsiasi posizione, indipendentemente da dove siano stati originati. \\
+La piattaforma è relativamente piccola, con circa 100 milioni di utenti, e non è dominante in molti paesi del mondo. Tuttavia, gli utenti che ha sono ben distribuiti e la sua base di utenti è in crescita.
+
+\subsection*{Vantaggi}
+\begin{itemize}
+		\item Autorizzazione utente tramite chiave cifrata e numero di telefono;
+		\item Supporta una crittografia a doppio strato. La crittografia server-client viene utilizzata nelle chat cloud, mentre le chat segrete utilizzano un ulteriore livello client-client. 
+		\item Inline Bot: permette all'utente di inviare query al bot da una qualsiasi conversazione, senza dover sottoscrivere il bot e senza inviare nessun messaggio testuale;
+		\item Possibilità di scegliere il data center più vicino a cui connettersi;
+		\item Ottimizzazioni client-side: conferma di ricezione di un messaggio semplificata, ottimizzazione del download e upload da/sul server, raggruppamento degli update in assenza di connessione;
+		\item Permette di scegliere la modalità di gestione degli update, se webhook o long-polling.
+\end{itemize} 
+
+\subsection*{Svantaggi}
+\begin{itemize}
+		\item Bacino contenuto di utenti;
+		\item Documentazione ufficiale povera di contenuti e scarsamente approfondita; 
+		\item Non integra NLP (Natural Language Processing) nativamente;
+		\item Non fornisce nessun strumento integrato di analisi delle prestazioni del bot e delle interazioni con esso;
+		\item Scarsa personalizzazione della UI nella conversazione.
+\end{itemize} 
+
+\bigskip
+\section*{Skype Messenger}
+\subsection*{Descrizione}
+
+\subsection*{Vantaggi}
+\begin{itemize}
+		\item 
+		\item  
+		\item 
+\end{itemize} 
+
+\subsection*{Svantaggi}
+\begin{itemize}
+		\item 
+		\item  
+		\item 
+\end{itemize} 
+
+\bigskip
+\section*{WeChat}
+\subsection*{Descrizione}
+
+\subsection*{Vantaggi}
+\begin{itemize}
+		\item 
+		\item  
+		\item 
+\end{itemize} 
+
+\subsection*{Svantaggi}
+\begin{itemize}
+		\item 
+		\item  
+		\item 
+\end{itemize} 
+
+\bigskip
+\section*{Facebook Messenger}
+\subsection*{Descrizione}
+
+\subsection*{Vantaggi}
+\begin{itemize}
+		\item 
+		\item  
+		\item 
+\end{itemize} 
+
+\subsection*{Svantaggi}
+\begin{itemize}
+		\item 
+		\item  
+		\item 
+\end{itemize} 
+
+\bigskip
+\section*{Scelta conclusiva}
+\end{document}
