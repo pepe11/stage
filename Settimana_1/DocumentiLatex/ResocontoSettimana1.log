@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.11.17)  23 NOV 2017 18:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.11.17)  23 NOV 2017 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ResocontoSettimana2.tex
-(./ResocontoSettimana2.tex
+**ResocontoSettimana1.tex
+(./ResocontoSettimana1.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -308,8 +308,8 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 70.
 
-(./ResocontoSettimana2.aux)
-\openout1 = `ResocontoSettimana2.aux'.
+(./ResocontoSettimana1.aux)
+\openout1 = `ResocontoSettimana1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
@@ -357,9 +357,9 @@ LaTeX Info: Redefining \ref on input line 76.
 LaTeX Info: Redefining \pageref on input line 76.
 LaTeX Info: Redefining \nameref on input line 76.
 
-(./ResocontoSettimana2.out) (./ResocontoSettimana2.out)
+(./ResocontoSettimana1.out) (./ResocontoSettimana1.out)
 \@outlinefile=\write3
-\openout3 = `ResocontoSettimana2.out'.
+\openout3 = `ResocontoSettimana1.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -475,26 +475,21 @@ File: immagini/logo-unipd.png Graphic file (type png)
 <use immagini/logo-unipd.png>
 Package pdftex.def Info: immagini/logo-unipd.png used on input line 132.
 (pdftex.def)             Requested size: 75.48354pt x 75.96535pt.
-
-Overfull \hbox (8.88887pt too wide) in paragraph at lines 142--143
-[]\T1/phv/m/n/10.95 Discussione delle pos-si-bili modal-ità di in-ter-cettazion
-e, da parte del chat-bot, di un evento (in-sert/update/delete)
- []
-
-[2]
+ [2]
 File: immagini/logo-unipd.png Graphic file (type png)
  <use immagini/logo-unipd.png>
-Package pdftex.def Info: immagini/logo-unipd.png used on input line 170.
+Package pdftex.def Info: immagini/logo-unipd.png used on input line 167.
 (pdftex.def)             Requested size: 75.48354pt x 75.96535pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
- (./ResocontoSettimana2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
-Package rerunfilecheck Info: File `ResocontoSettimana2.out' has not changed.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+
+(./ResocontoSettimana1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package rerunfilecheck Info: File `ResocontoSettimana1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
  8066 strings out of 495028
@@ -503,13 +498,13 @@ Here is how much of TeX's memory you used:
  11152 multiletter control sequences out of 15000+600000
  26625 words of font info for 45 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 29i,7n,43p,362b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,43p,542b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on ResocontoSettimana2.pdf (3 pages, 162284 bytes).
+Output written on ResocontoSettimana1.pdf (3 pages, 162981 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
