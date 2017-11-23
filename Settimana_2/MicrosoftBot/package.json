@@ -1,16 +1,29 @@
 {
-  "name": "microsoftbot",
+  "name": "simple-send-message",
   "version": "1.0.0",
-  "description": "fist skype bot with MicrosoftBot",
-  "main": "app.js",
+  "description": "demonstrate proactive sending of a simple message",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sanna Giovanni",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicrosoftDX/botFramework-proactiveMessages.git"
+  },
+  "keywords": [
+    "node",
+    "microsoft",
+    "caap",
+    "bot"
+  ],
+  "author": "tobybrad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicrosoftDX/botFramework-proactiveMessages/issues"
+  },
+  "homepage": "https://github.com/MicrosoftDX/botFramework-proactiveMessages#readme",
   "dependencies": {
-    "botbuilder": "^3.12.0",
-    "restify": "^6.3.2"
+    "botbuilder": "^3.8.2",
+    "restify": "^4.3.2"
   }
 }

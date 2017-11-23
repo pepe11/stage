@@ -1,0 +1,16 @@
+{
+  "name": "microsoftbot",
+  "version": "1.0.0",
+  "description": "fist skype bot with MicrosoftBot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Sanna Giovanni",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.12.0",
+    "restify": "^6.3.2"
+  }
+}

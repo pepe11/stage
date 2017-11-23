@@ -1,0 +1,7 @@
+cd MicrosoftBot
+git add --all
+git commit -m "commit"
+git push heroku master
+
+// for logs
+heroku logs
