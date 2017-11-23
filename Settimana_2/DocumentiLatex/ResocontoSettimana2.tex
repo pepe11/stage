@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NIH Grant Proposal for the Specific Aims and Research Plan Sections
+% LaTeX Template
+% Version 1.0 (21/10/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Erick Tatro (erickttr@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% Adapted from:
+% J. Hrabe (http://www.magalien.com/public/nih_grants_in_latex.html)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,notitlepage]{article}
+
+% Variabili per non ripetere i contatti mille volte, MODIFICARE QUI
+\newcommand{\nomeStudente}{Giovanni Bruno}
+\newcommand{\cognomeStudente}{Sanna}
+\newcommand{\matricolaStudente}{1029744}
+\newcommand{\emailStudente}{giovannibruno.sanna@studenti.unipd.com}
+\newcommand{\telStudente}{+39 0000000000}
+
+\newcommand{\nomeTutorAziendale}{Nome}
+\newcommand{\cognomeTutorAziendale}{Cognome}
+\newcommand{\emailTutorAziendale}{xxtutor@azienda.it}
+\newcommand{\telTutorAziendale}{+39 0000000000}
+
+\newcommand{\ragioneSocAzienda}{Soluzioni Software S.R.L.}
+\newcommand{\indirizzoAzienda}{Via Via dei Ronchi, 21, 35127 Padova (PD)}
+\newcommand{\sitoAzienda}{http://www.soluzioni-sw.it/}
+
+
+
+% A note on fonts: As of 2013, NIH allows Georgia, Arial, Helvetica, and Palatino Linotype. LaTeX doesn't have Georgia or Arial built in; you can try to come up with your own solution if you wish to use those fonts. Here, Palatino & Helvetica are available, leave the font you want to use uncommented while commenting out the other one.
+%\usepackage{palatino} % Palatino font
+\usepackage[utf8x]{inputenc}%codifica
+\usepackage{helvet} % Helvetica font
+\usepackage{multirow}
+\renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
+\usepackage[T1]{fontenc}
+\linespread{1.2} % A little extra line spread is better for the Palatino font
+\usepackage{fancyhdr} %pacchetto per le intestazioni
+\usepackage{hyperref}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{graphicx} % Required for including images
+%\usepackage{booktabs} % Top and bottom rules for table
+%\usepackage{wrapfig} % Allows in-line images
+%\usepackage[labelfont=bf]{caption} % Make figure numbering in captions bold
+\usepackage[top=0.5in,bottom=0.5in,left=0.5in,right=0.5in]{geometry} % Reduce the size of the margin
+\pagestyle{empty}
+
+\hyphenation{ionto-pho-re-tic iso-tro-pic fortran} % Specifies custom hyphenation points for words or words that shouldn't be hyphenated at all
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue
+}
+
+%----------------------------------------------------------------------------------------
+%	Creato da Mich - Updated by Simone Pessotto 04/08/2015
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	
+\noindent
+\parbox{0.7\columnwidth}{Università degli Studi di Padova\\
+	Piano di lavoro stage presso \ragioneSocAzienda{}\\
+	\nomeStudente{} \cognomeStudente{} (\matricolaStudente{})}%matricola
+\parbox{0.3\columnwidth}{
+	\hfill \includegraphics[scale=0.08]{immagini/logo-unipd.png}}
+
+\bigskip
+\begin{center}
+{\Huge \textbf{Resoconto Settimana 2}} \\ 
+{\textbf{20/11/2017 - 24/11/2017}} \\ \bigskip
+	{\Large \textit{presso \ragioneSocAzienda{}}}\\ \bigskip
+	{\Large \textit{\nomeStudente{} \cognomeStudente{}}}
+\end{center}
+
+%\section*{Contatti}
+%\textbf{Studente:} \nomeStudente{} \cognomeStudente{}, \href{mailto:\emailStudente{}}{\emailStudente{}}, \telStudente{} \\
+%\textbf{Tutor aziendale:} \nomeTutorAziendale{} \cognomeTutorAziendale{}, \href{mailto:\emailTutorAziendale{}}{\emailTutorAziendale{}}, \telTutorAziendale{} \\
+%\textbf{Azienda:} \ragioneSocAzienda{}, \indirizzoAzienda{}, \href{\sitoAzienda{}}{\sitoAzienda{}}
+
+\section*{Scopo dello stage}
+
+L’azienda si occupa di consulenza e sviluppo di software per la gestione aziendale, in particolare per la piccola
+e media impresa. Fornisce servizi di consulenza e di riorganizzazione dei processi aziendali; inoltre si occupa
+dello sviluppo di applicativi per la gestione aziendale, il CRM, la logistica e la Business Intelligence. \\ \\
+Lo stage prevede l’analisi e lo sviluppo di un prototipo di ChatBot che fornisca informazioni su eventi legati alla
+vita aziendale provenienti da CRM (Customer Relationship Management) o ERP (Enterprise Resource Planning). \\
+Individuazione di una piattaforma di messaggistica che supporti i ChatBot e comparazione delle funzionalità
+potenziali offerte; successiva realizzazione di un prototipo di ChatBot che notifichi, ad una lista di utenti definita,
+eventi associati alla realtà aziendale derivanti dall’ERP o CRM. \\
+Il progetto prevederà l’analisi, test e sviluppo di un prototipo di gestore di messaggi dall’azienda ai suoi dipendenti
+utilizzando un ChatBot sviluppato su una delle piattaforme di messaggistica più note (WeChat, Telegram, Skype
+Messenger). Lo studio individuerà una architettura che consentirà la distribuzione dei messaggi e lo sviluppo di
+un prototipo che invii informazioni aziendali sia su richieste parametriche che su evento.
+
+\bigskip
+\section*{Contenuto del documento}
+Nel presente documento è riportato: 
+\begin{itemize}
+		\item Milestone fissata per la settimana in oggetto;
+		\item Riassunto del meeting settimanale avuto con il tutor aziendale;
+		\item Descrizione delle attività eseguite durante la settimana;
+		\item Raggiungimento risultati attesi.
+	\end{itemize} 
+
+\newpage
+
+
+
+\noindent
+\parbox{0.7\columnwidth}{Università degli Studi di Padova\\
+	Piano di lavoro stage presso \ragioneSocAzienda{}\\
+	\nomeStudente{} \cognomeStudente{} (\matricolaStudente{})}%matricola
+\parbox{0.3\columnwidth}{
+	\hfill \includegraphics[scale=0.08]{immagini/logo-unipd.png}}
+
+\bigskip
+\section*{Milestone}
+Implementazione di uno o più esempi applicativi di utilizzo del framework scelto per lo sviluppo.
+
+\bigskip
+\section*{Riassunto meeting con tutor aziendale}
+Di seguito sono riportati gli argomenti di discussione del meeting, avvenuto il 22/11/2017:
+\begin{itemize}
+		\item Discussione delle possibili modalità di intercettazione, da parte del chatbot, di un evento (insert/update/delete) che occorre nella base dati aziendale; definizione di quali eventi (che occorrono nella base dati aziendale) e su quali tabelle è necessario siano monitorati dal chatbot;
+		\item Illustrazione della piattaforma di messaggistica scelta per lo sviluppo, indicandone le principali funzionalità fornite e le motivazioni che hanno portato a tale scelta;
+		\item Discussione delle modalità di autenticazione di un utente attraverso il chatbot;
+		\item Illustrazione dello schema della base di dati necessaria al chatbot per gestire la logica decisionale (diversa dalla base dati aziendale);
+		\item Dimostrazione degli esempi applicativi prodotti.
+\end{itemize} 
+
+
+
+
+\bigskip
+\section*{Attività}
+Di seguito sono riportate le attività svolte durante la settimana 20/11/2017 - 24/11/2017:
+\begin{itemize}
+		\item Ricerca e studio approssimativo dei possibili framework di sviluppo, consultandone la documentazione ufficiale e implementando semplici esempi;
+		\item Per ogni framework preso in considerazione, ricerca e studio approssimativo degli SDK (Software Development Kit) disponibili e delle funzioni che forniscono;
+		\item Scelta del framework e degli strumenti di sviluppo, fra quelli analizzati; studio approfondito di tali tecnologie scelte;
+		\item Implementazione di 3 esempi applicativi di utilizzo del framework e degli strumenti di sviluppo scelti.
+\end{itemize}
+
+
+\newpage
+\noindent
+\parbox{0.7\columnwidth}{Università degli Studi di Padova\\
+	Piano di lavoro stage presso \ragioneSocAzienda{}\\
+	\nomeStudente{} \cognomeStudente{} (\matricolaStudente{})}%matricola
+\parbox{0.3\columnwidth}{
+	\hfill \includegraphics[scale=0.08]{immagini/logo-unipd.png}}
+
+\bigskip
+\section*{Raggiungimento risultati attesi}
+Questa settimana si conferma che i risultati attesi sono stati raggiunti. Ovvero sono stati prodotti 3 esempi applicativi di utilizzo del framework e degli strumenti di sviluppo scelti; tali esempi implementano le funzioni più significative delle tecnologie scelte.
+
+\end{document}

@@ -1,29 +1,32 @@
 {
-  "name": "simple-send-message",
+  "name": "botbuilder-sample-adaptivecards",
   "version": "1.0.0",
-  "description": "demonstrate proactive sending of a simple message",
-  "main": "index.js",
+  "description": "Bot Builder Sample - Adaptive Cards",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
+  },
+  "author": "Microsoft Corp.",
+  "license": "MIT",
+  "keywords": [
+    "botbuilder",
+    "bots",
+    "chatbots",
+    "botbuilder-samples",
+    "adaptive-cards"
+  ],
+  "bugs": {
+    "url": "https://github.com/Microsoft/BotBuilder-Samples/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MicrosoftDX/botFramework-proactiveMessages.git"
+    "url": "https://github.com/Microsoft/BotBuilder-Samples.git"
   },
-  "keywords": [
-    "node",
-    "microsoft",
-    "caap",
-    "bot"
-  ],
-  "author": "tobybrad",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MicrosoftDX/botFramework-proactiveMessages/issues"
-  },
-  "homepage": "https://github.com/MicrosoftDX/botFramework-proactiveMessages#readme",
   "dependencies": {
-    "botbuilder": "^3.8.2",
-    "restify": "^4.3.2"
+    "adaptivecards": "^1.0.0-beta5",
+    "bluebird": "^3.5.0",
+    "botbuilder": "^3.8.3",
+    "dotenv-extended": "^2.0.0",
+    "lodash": "^4.17.4",
+    "restify": "^4.3.0"
   }
 }
